@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quais dados do Gmail o LeaseSync acessa e como gerenciar a autorização e as cópias locais.">
+  <title>LeaseSync · Política de privacidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header"><div class="frame header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span> LeaseSync</a>
+    <nav aria-label="Navegação principal"><a href="privacidade.html" aria-current="page">Privacidade</a><a href="termos.html">Termos de uso</a></nav>
+  </div></header>
+  <main id="conteudo" class="frame document">
+    <div class="document-heading">
+      <p class="eyebrow">Piloto de faturas por e-mail</p>
+      <h1>Política de privacidade</h1>
+      <p class="intro">Esta política explica como o LeaseSync trata os dados do Google quando você usa o piloto de faturas por e-mail.</p>
+    </div>
+    <section>
+      <h2>Dados acessados e por quê</h2>
+      <p>Ao conectar uma caixa, o LeaseSync solicita a permissão <code>gmail.readonly</code> e consulta o endereço da conta para confirmar a caixa selecionada. Essa permissão permite a leitura da caixa no Google. Na prática, você inicia a busca no LeaseSync e informa os remetentes a consultar. O aplicativo busca mensagens recentes desses remetentes e baixa os anexos PDF que encontra para revisão.</p>
+      <p>A fila usa o endereço da caixa, remetente, destinatário, assunto, data, identificadores da mensagem e informações do anexo para mostrar a origem e identificar cópias repetidas. Os campos da fatura, como fornecedor, imóvel, período e valor, servem para conferir o documento e comparar com as contas já registradas.</p>
+    </section>
+    <section>
+      <h2>Onde os dados ficam</h2>
+      <p>O LeaseSync mantém o PDF original, os dados de origem e os dados da revisão criptografados no banco local. A credencial que renova o acesso ao Gmail fica criptografada em um arquivo local separado do banco e dos backups. A senha da conta é informada diretamente ao Google.</p>
+      <p>Os dados da fila permanecem até você remover a cópia local. Se o operador usar backup do banco, a fila criptografada pode constar nas cópias. Backups externos, quando usados, ficam no destino configurado pelo operador, como sua conta Google Drive. Cópias já criadas seguem a retenção dos backups.</p>
+    </section>
+    <section>
+      <h2>Uso dos dados e serviços envolvidos</h2>
+      <p>O Google fornece o acesso autorizado ao Gmail. A conferência do piloto pode ser feita no próprio LeaseSync com o PDF. O envio de PDFs do Gmail ao Kimi está desativado no piloto atual. Se a leitura opcional for habilitada com tratamento de dados compatível, o envio de um PDF ao Kimi dependerá de uma ação explícita naquele item para extrair os campos da fatura. Se você baixar o PDF e usar a importação manual comum, esse envio seguirá o provedor de leitura configurado nesse fluxo.</p>
+      <p>O LeaseSync usa os dados recebidos das APIs do Google exclusivamente para oferecer as funções descritas nesta política. O tratamento segue a <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de uso limitado. Os dados do Google ficam fora de atividades de publicidade, venda de dados e treinamento de modelos gerais de IA.</p>
+    </section>
+    <section>
+      <h2>Como revogar o acesso e excluir cópias</h2>
+      <p>Em <strong>Contas → Faturas por e-mail</strong>, selecione a caixa e clique em <strong>Desconectar caixa</strong>. Você também pode remover o acesso na página de <a href="https://myaccount.google.com/connections">conexões da sua Conta Google</a>.</p>
+      <p>Para excluir um PDF e a origem da fila, arquive o item e selecione <strong>Remover cópia local</strong>. A mensagem original fica no Gmail. Para apagar uma cópia que já conste em backup, o operador pode gerenciar os backups no destino em que foram armazenados.</p>
+    </section>
+    <section>
+      <h2>Alterações e contato</h2>
+      <p>Esta página registra as práticas de tratamento do piloto. Mudanças no tratamento dos dados do Google serão comunicadas aos usuários. Para dúvidas sobre privacidade, acesso ou exclusão, escreva para <a href="mailto:rangel.finn2@gmail.com">rangel.finn2@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="frame footer-inner"><a href="index.html">Sobre o LeaseSync</a><a href="termos.html">Termos de uso</a></div></footer>
+</body>
+</html>
