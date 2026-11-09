@@ -21,12 +21,13 @@
     </div>
     <section>
       <h2>Dados acessados e por quê</h2>
-      <p>Ao conectar uma caixa, o LeaseSync solicita a permissão <code>gmail.readonly</code> e consulta o endereço da conta para confirmar a caixa selecionada. Essa permissão permite a leitura da caixa no Google. Na prática, você inicia a busca no LeaseSync e informa os remetentes a consultar. O aplicativo busca mensagens recentes desses remetentes e baixa os anexos PDF que encontra para revisão.</p>
+      <p>Ao conectar uma caixa, o LeaseSync solicita a permissão <code>gmail.readonly</code> e consulta o endereço da conta para confirmar a caixa selecionada. Essa permissão permite a leitura da caixa no Google. Quando você inicia a busca no LeaseSync, o aplicativo consulta mensagens recentes com anexos PDF nas caixas autorizadas e baixa PDFs que podem ser faturas. Ele registra até onde a busca chegou para continuar dali na próxima consulta.</p>
       <p>A fila usa o endereço da caixa, remetente, destinatário, assunto, data, identificadores da mensagem e informações do anexo para mostrar a origem e identificar cópias repetidas. Os campos da fatura, como fornecedor, imóvel, período e valor, servem para conferir o documento e comparar com as contas já registradas.</p>
     </section>
     <section>
       <h2>Onde os dados ficam</h2>
       <p>O LeaseSync mantém o PDF original, os dados de origem e os dados da revisão criptografados no banco local. A credencial que renova o acesso ao Gmail fica criptografada em um arquivo local separado do banco e dos backups. A senha da conta é informada diretamente ao Google.</p>
+      <p>Quando uma fatura compatível passa pelas validações, o LeaseSync arquiva o PDF original no Google Drive configurado no app e registra os campos da fatura no sistema de Contas conectado à planilha do operador. A fila no LeaseSync exibe a data de recebimento e o link para a mensagem no Gmail para que você possa conferir a origem.</p>
       <p>Os dados da fila permanecem até você remover a cópia local. Se o operador usar backup do banco, a fila criptografada pode constar nas cópias. Backups externos, quando usados, ficam no destino configurado pelo operador, como sua conta Google Drive. Cópias já criadas seguem a retenção dos backups.</p>
     </section>
     <section>
@@ -37,7 +38,7 @@
     <section>
       <h2>Como revogar o acesso e excluir cópias</h2>
       <p>Em <strong>Contas → Faturas por e-mail</strong>, selecione a caixa e clique em <strong>Desconectar caixa</strong>. Você também pode remover o acesso na página de <a href="https://myaccount.google.com/connections">conexões da sua Conta Google</a>.</p>
-      <p>Para excluir um PDF e a origem da fila, arquive o item e selecione <strong>Remover cópia local</strong>. A mensagem original fica no Gmail. Para apagar uma cópia que já conste em backup, o operador pode gerenciar os backups no destino em que foram armazenados.</p>
+      <p>Para excluir um PDF em revisão e a origem da fila, arquive o item e selecione <strong>Remover cópia local</strong>. A mensagem original fica no Gmail. Os lançamentos e PDFs já importados são gerenciados em Contas e no Drive. O operador pode gerenciar cópias de backup no destino em que foram armazenadas.</p>
     </section>
     <section>
       <h2>Alterações e contato</h2>
